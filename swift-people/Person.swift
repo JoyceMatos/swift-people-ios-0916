@@ -14,11 +14,11 @@ class Person {
     var ageInYears: Int?
     var skills: [String] = []
     var qualifiedTutor: Bool {
-       if skills.count >= 4 {
+       while skills.count >= 4 {
             return true
-        } else {
-            return false
         }
+            return false
+    
     }
     
     init(name: String, ageInYears: Int?) {
